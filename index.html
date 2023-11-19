@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    
+    <!-- Include jQuery from a CDN -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include jQuery Mobile from a CDN -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="A.css">
+</head>
+<body>
+    <div id="app" data-role="page">
+        <div data-role="header">
+            <h1 class="ui-title" role="heading">Task Management</h1>
+        </div>
+        <div data-role="content" class="ui-grid ui-responsive">
+            <div class="ui-block">
+                <input type="text" id="newTask" placeholder="Add a new task">
+                <button id="addTask" data-inline="true">Add</button>
+                <ul id="taskList" data-role="listview" data-inset="true">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="B.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* A.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url("callpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full-height background */
+    margin: 0; /* Remove default body margin */
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Customize the listview appearance */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; /* Increased padding for better touch interaction */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+    border: 3px solid #ddd; /* Border */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add some margin between list items */
+}
+
+li .edit, li .delete {
+    margin-left: 10px;
+}
+
+/* Customize listview divider (if needed) */
+.ui-li-divider {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Customize button appearance */
+.ui-btn {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    text-shadow: none; /* Remove text shadow */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Adjust the spacing and alignment of buttons */
+.ui-btn.ui-icon-edit {
+    margin-right: 5px;
+}
+
+.ui-btn.ui-icon-delete {
+    margin-left: 5px;
+}
